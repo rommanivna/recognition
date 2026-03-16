@@ -1,5 +1,12 @@
 [
   {
+    "timestamp": "16.03.2026 22:32",
+    "person1": "Steve Jobs",
+    "person2": "Elon Musk",
+    "distance": 0.9207,
+    "verified": false
+  },
+  {
     "timestamp": "01.03.2026 12:12",
     "person1": "Bill Gates",
     "person2": "Elon Musk",

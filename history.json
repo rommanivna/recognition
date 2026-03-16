@@ -1,0 +1,247 @@
+[
+  {
+    "timestamp": "01.03.2026 12:12",
+    "person1": "Bill Gates",
+    "person2": "Elon Musk",
+    "distance": 0.9276,
+    "verified": false
+  },
+  {
+    "timestamp": "01.03.2026 12:11",
+    "person1": "Bill Gates",
+    "person2": "Elon Musk",
+    "distance": 0.9276,
+    "verified": false
+  },
+  {
+    "timestamp": "01.03.2026 12:03",
+    "person1": "Johnny Depp",
+    "person2": "Michael Jackson",
+    "distance": 0.9456,
+    "verified": false
+  },
+  {
+    "timestamp": "01.03.2026 10:54",
+    "person1": "Johnny Depp",
+    "person2": "Michael Jackson",
+    "distance": 0.9456,
+    "verified": false
+  },
+  {
+    "timestamp": "01.03.2026 10:35",
+    "person1": "Jannifer Lopez",
+    "person2": "Timothee Chalamet",
+    "distance": 0.9647,
+    "verified": false
+  },
+  {
+    "timestamp": "01.03.2026 10:04",
+    "person1": "Steve Jobs",
+    "person2": "Timothee Chalamet",
+    "distance": 1.0255,
+    "verified": false
+  },
+  {
+    "timestamp": "28.02.2026 20:03",
+    "person1": "Michael Jackson",
+    "person2": "Steve Jobs",
+    "distance": 0.8205,
+    "verified": false
+  },
+  {
+    "timestamp": "28.02.2026 11:19",
+    "person1": "Timothee Chalamet",
+    "person2": "Steve Jobs",
+    "distance": 1.0255,
+    "verified": false
+  },
+  {
+    "timestamp": "08.01.2026 10:48",
+    "person1": "The Weekend",
+    "person2": "Michael Jackson",
+    "distance": 0.8928,
+    "verified": false
+  },
+  {
+    "timestamp": "08.01.2026 10:45",
+    "person1": "Steve Jobs",
+    "person2": "Bezos",
+    "distance": 0.7617,
+    "verified": false
+  },
+  {
+    "timestamp": "08.01.2026 10:38",
+    "person1": "My Photo",
+    "person2": "Lili Reinhart",
+    "distance": 0.8468,
+    "verified": false
+  },
+  {
+    "timestamp": "08.01.2026 10:32",
+    "person1": "Lili Reinhart",
+    "person2": "Reinhart Lili",
+    "distance": 0.5721,
+    "verified": true
+  },
+  {
+    "timestamp": "08.01.2026 10:25",
+    "person1": "Steve Jobs",
+    "person2": "Timothee Chalamet",
+    "distance": 1.0255,
+    "verified": false
+  },
+  {
+    "timestamp": "08.01.2026 10:24",
+    "person1": "Lili Reinhart",
+    "person2": "Jannifer Lopez",
+    "distance": 0.8761,
+    "verified": false
+  },
+  {
+    "timestamp": "08.01.2026 10:22",
+    "person1": "Vera Farmiga",
+    "person2": "Will Smith",
+    "distance": 1.0482,
+    "verified": false
+  },
+  {
+    "timestamp": "08.01.2026 09:38",
+    "person1": "Michael Jackson",
+    "person2": "Jeff Bezos",
+    "distance": 0.8942,
+    "verified": false
+  },
+  {
+    "timestamp": "08.01.2026 09:33",
+    "person1": "Patrick Wilson",
+    "person2": "Jeff Bezos",
+    "distance": 0.8949,
+    "verified": false
+  },
+  {
+    "timestamp": "08.01.2026 09:10",
+    "person1": "Steve Jobs",
+    "person2": "Timothee Chalamet",
+    "distance": 1.0255,
+    "verified": false
+  },
+  {
+    "timestamp": "08.01.2026 09:02",
+    "person1": "Lili Reinhart",
+    "person2": "Jannifer Lopez",
+    "distance": 0.8761,
+    "verified": false
+  },
+  {
+    "timestamp": "06.01.2026 11:42",
+    "person1": "Vera Farmiga",
+    "person2": "Will Smith",
+    "distance": 1.0482,
+    "verified": false
+  },
+  {
+    "timestamp": "06.01.2026 11:37",
+    "person1": "Vera Farmiga",
+    "person2": "Will Smith",
+    "distance": 1.0482,
+    "verified": false
+  },
+  {
+    "timestamp": "06.01.2026 11:35",
+    "person1": "Bezos",
+    "person2": "Will Smith",
+    "distance": 0.8982,
+    "verified": false
+  },
+  {
+    "timestamp": "06.01.2026 11:32",
+    "person1": "Jannifer Lopez",
+    "person2": "Lopez",
+    "distance": 0.4985,
+    "verified": true
+  },
+  {
+    "timestamp": "06.01.2026 11:24",
+    "person1": "Bezos",
+    "person2": "Bezos",
+    "distance": 0.0,
+    "verified": true
+  },
+  {
+    "timestamp": "06.01.2026 11:24",
+    "person1": "Jeff",
+    "person2": "Bezos",
+    "distance": 0.3906,
+    "verified": true
+  },
+  {
+    "timestamp": "06.01.2026 00:27",
+    "person1": "Bezos",
+    "person2": "Jeff",
+    "distance": 0.3906,
+    "verified": true
+  },
+  {
+    "timestamp": "05.01.2026 20:45",
+    "person1": "Jannifer Lopez",
+    "person2": "Jeff",
+    "distance": 0.9926,
+    "verified": false
+  },
+  {
+    "timestamp": "04.01.2026 20:16",
+    "person1": "Bezos",
+    "person2": "Jannifer Lopez",
+    "distance": 0.9224,
+    "verified": false
+  },
+  {
+    "timestamp": "04.01.2026 19:03",
+    "person1": "Bezos",
+    "person2": "Jannifer Lopez",
+    "distance": 0.9224,
+    "verified": false
+  },
+  {
+    "timestamp": "04.01.2026 18:56",
+    "person1": "Bezos",
+    "person2": "Lili Reinhart",
+    "distance": 0.8417,
+    "verified": false
+  },
+  {
+    "timestamp": "04.01.2026 17:30",
+    "person1": "Bezos",
+    "person2": "Jeff",
+    "distance": 0.3906,
+    "verified": true
+  },
+  {
+    "timestamp": "04.01.2026 17:14",
+    "person1": "Jannifer Lopez",
+    "person2": "Lili Reinhart",
+    "distance": 0.8761,
+    "verified": false
+  },
+  {
+    "timestamp": "04.01.2026 17:12",
+    "person1": "Jeffrey",
+    "person2": "Jeff",
+    "distance": 0.8311,
+    "verified": false
+  },
+  {
+    "timestamp": "04.01.2026 16:07",
+    "person1": "Lopez",
+    "person2": "Lili Reinhart",
+    "distance": 0.8926,
+    "verified": false
+  },
+  {
+    "timestamp": "04.01.2026 16:06",
+    "person1": "Bezos",
+    "person2": "Jeffrey",
+    "distance": 0.9136,
+    "verified": false
+  }
+]

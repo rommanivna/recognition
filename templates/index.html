@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comperator</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+<!-- THEME SWITCH -->
+<div class="theme-toggle">
+  <input type="checkbox" id="themeSwitch" class="switch-input">
+  <label for="themeSwitch" class="switch-label"></label>
+</div>
+
+<!-- HEADER -->
+<header class="header">
+  <h1>Comparator</h1>
+</header>
+
+<div id="msg"></div>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="container features-container">
+
+    <div class="feature">
+      <i class="fas fa-robot"></i>
+      <h3>AI-Powered</h3>
+      <p>DeepFace AI ensures accurate face recognition and comparison.</p>
+    </div>
+
+    <div class="feature">
+      <i class="fas fa-exchange-alt"></i>
+      <h3>Compare</h3>
+      <p>Upload two photos to see how similar they are. Check the history of comparisons and follow links to learn more about the people you're interested in.</p>
+    </div>
+
+    <div class="feature">
+      <i class="fas fa-search"></i>
+      <h3>Search</h3>
+      <p>Find look-alikes or verify identity. Monitor the real-time stream to see the AI analysis in action.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MAIN GRID -->
+<section class="upload">
+  <div class="container upload-container">
+
+    <form id="compare-form" enctype="multipart/form-data"
+          style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:30px;align-items:start;">
+
+      <!-- IMAGE 1 -->
+      <div class="upload-group">
+        <h3>Choose first image:</h3>
+        <input type="file" id="image1" name="image1" required accept="image/*"
+               onchange="previewImage(event, 'preview1')">
+        <img id="preview1" class="preview">
+      </div>
+
+      <!-- IMAGE 2 -->
+      <div class="upload-group">
+        <h3>Choose second image:</h3>
+        <input type="file" id="image2" name="image2" required accept="image/*"
+               onchange="previewImage(event, 'preview2')">
+        <img id="preview2" class="preview">
+      </div>
+
+      <!-- RECENT -->
+       <div class="upload-group" id="recent">
+  <h3>Recent Comparisons</h3>
+  <ul style="list-style:none;padding:0;font-size:14px;">
+    {% for entry in history %}
+      <li>
+        <a href="https://en.wikipedia.org/wiki/{{ entry.person1|replace(' ', '_') }}" target="_blank" class="wiki-link">{{ entry.person1 }}</a> 
+        vs 
+        <a href="https://en.wikipedia.org/wiki/{{ entry.person2|replace(' ', '_') }}" target="_blank" class="wiki-link">{{ entry.person2 }}</a>
+      </li>
+    {% else %}
+      <li>No recent comparisons</li>
+    {% endfor %}
+  </ul>
+</div>
+
+      <!-- STREAM -->
+      <div class="upload-group" id="stream" >
+        <h3>Watch what we are doing…</h3>
+        <div id="server-log">
+          STREAM…
+        </div>
+      </div>
+
+    </form>
+
+    <!-- COMPARE BUTTON -->
+    <button type="submit" form="compare-form" class="compare-btn">
+      Compare
+    </button>
+
+  </div>
+</section>
+
+<!-- LOADING -->
+<div id="loading" style="display:none;text-align:center;margin:20px;">
+  <p>Analyzing images…</p>
+  <img src="https://i.gifer.com/ZZ5H.gif" width="70">
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="info">
+  <div class="container info-container">
+    <h3>How It Works</h3>
+    <p>
+      This app uses the <a href ="https://pypi.org/project/deepface/" class="deepface-link"><b>DeepFace</b></a> library to analyze facial features and compare two images.
+      It extracts embeddings and calculates similarity using cosine distance.
+    </p>
+    <p>
+      All processing is done locally with AI models. No images are stored.
+    </p>
+  </div>
+</section>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+
+{% if error %}
+<script>alert("{{ error|e }}")</script>
+{% endif %}
+
+</body>
+</html>

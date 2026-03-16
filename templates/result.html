@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+
+<html lang="uk">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Результат порівняння</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+<body>
+
+<div class="theme-toggle">
+
+<input type="checkbox" id="themeSwitch" class="switch-input">
+
+<label for="themeSwitch" class="switch-label"></label>
+
+</div>
+
+
+
+<header class="hero">
+
+{% if tier == 'similar' %}
+
+<h1>🟩 Це та сама людина!</h1>
+
+{% elif tier == 'middle' %}
+
+<h1>🟪 Часткова схожість</h1>
+
+{% else %}
+
+<h1>🟥 Це різні люди!</h1>
+
+{% endif %}
+
+</header>
+
+
+<div id="server-log" class="server-log"></div>
+
+<main class="results">
+
+<div class="result-card {{ 'success' if verified else 'fail' }}">
+
+<div class="similarity-box">
+
+<p>
+
+<strong>Similarity:</strong> {{ similarity_pct|round(1) }}%
+
+<span class="pill pill-{{ tier }}">{{ emoji }}</span>
+
+</p>
+
+<div class="progress">
+
+<div class="progress-bar bar-{{ tier }}" style="width: {{ (similarity_pct|default(0))|round(0) }}%;"></div>
+
+</div>
+
+<small style="opacity:.8">Cosine distance: {{ distance|round(4) }}</small>
+
+</div>
+
+
+
+{% if verified %}
+
+<div class="person-card">
+<img src="{{ url_for('static', filename='uploads/' + file) }}" alt="Person">
+
+<p>{{ info }}</p>
+
+</div>
+
+{% else %}
+
+<div class="people">
+
+<div class="person-card">
+
+<h3>{{ person1_name or 'Person 1' }}</h3>
+
+<img src="{{ url_for('static', filename='uploads/' + file1) }}" alt="Person 1">
+
+<p>{{ info1 }}</p>
+
+</div>
+
+<div class="person-card">
+
+<h3>{{ person2_name or 'Person 2' }}</h3>
+
+<img src="{{ url_for('static', filename='uploads/' + file2) }}" alt="Person 2">
+
+<p>{{ info2 }}</p>
+
+</div>
+
+</div>
+
+{% endif %}
+
+</div>
+
+
+
+<a href="{{ url_for('index') }}" class="back-btn">🔙 Спробувати ще раз</a>
+
+</main>
+
+
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+
+
+</body>
+
+</html>

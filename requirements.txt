@@ -1,0 +1,6 @@
+flask
+deepface
+wikipedia
+werkzeug
+tf-keras
+opencv-python-headless
